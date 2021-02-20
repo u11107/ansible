@@ -1,0 +1,10 @@
+---
+# tasks file for repo
+- name: Git Repo
+  git:
+    repo: https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
+    dest: /home/build
+
+
+- name: Maven package
+  command: mvn -f /home/build/pom.xml clean package

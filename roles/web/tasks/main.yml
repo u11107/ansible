@@ -1,0 +1,11 @@
+---
+# tasks file for web
+- name: install jre
+  apt:
+    name: default-jre
+    state: present
+
+- name: install tomcat9
+  apt:
+    name: tomcat9
+    state: present
